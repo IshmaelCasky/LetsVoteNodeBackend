@@ -76,3 +76,5 @@ const checkEnded = schedule.scheduleJob("*/3 * * * * *", function(){
 const updateDatabase = schedule.scheduleJob("*/5 * * * * ", function(){
     updatedatabase();
 });
+
+console.log("app running");
