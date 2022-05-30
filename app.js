@@ -25,6 +25,12 @@ admin.initializeApp({
 
 var port = process.env.PORT || 8080;
 
+exp.use(express.static(__dirname + '/public'));
+
+exp.get('/', function(req, res) {
+    res.render("index");
+})
+
 exp.listen(port, function(){
     const db = admin.firestore();
     let sessions = db.collection('VotingSessions');
