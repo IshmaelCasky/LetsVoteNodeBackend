@@ -5,5 +5,3 @@
     "node-schedule": "^2.1.0"
   }
 }
-[build]
-  command = "npm run build && node ./app.js"
